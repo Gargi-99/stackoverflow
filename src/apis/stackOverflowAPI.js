@@ -7,7 +7,7 @@ export const fetchQuestions = async (sortType) => {
   try {
     let params = {
       order: 'desc',
-      sort: 'activity', 
+      sort: 'activity',  // Default sort
       site: 'stackoverflow',
     };
 
@@ -17,18 +17,16 @@ export const fetchQuestions = async (sortType) => {
         break;
       case 'bountied':
         params.sort = 'activity'; 
-        params.min = 1; 
+        // params.min = 1; // Ensure at least 1 bounty
         break;
       case 'hot':
         params.sort = 'hot'; 
         break;
       case 'week':
-        params.sort = 'activity'; 
-        params.fromdate = Math.floor((Date.now() - 7 * 24 * 60 * 60 * 1000) / 1000);
+        params.sort = 'week'; // Correct sort for week
         break;
       case 'month':
-        params.sort = 'creation';
-        params.fromdate = Math.floor((Date.now() - 30 * 24 * 60 * 60 * 1000) / 1000);
+        params.sort = 'month'; // Correct sort for month
         break;
       default:
         params.sort = 'activity';
