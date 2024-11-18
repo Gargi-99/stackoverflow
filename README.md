@@ -1,6 +1,6 @@
 # Stack Overflow Clone
 
-This project is a Stack Overflow clone built as part of an internship assessment for Acorn Globus. The project focuses on recreating the functionality and design of Stack Overflow while incorporating dynamic features using the Stack Overflow API. Below is an overview of the implemented features:
+This project is a Stack Overflow clone built as part of an assessment for **Acorn Globus**. The project focuses on recreating the functionality and design of Stack Overflow while incorporating dynamic features using the Stack Overflow API. Below is an overview of the implemented features:
 
 ## Features Implemented
 
