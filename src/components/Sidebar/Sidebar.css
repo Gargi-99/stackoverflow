@@ -1,0 +1,85 @@
+/* Sidebar container */
+.sidebar {
+    background-color: #ffffff;
+    padding: 1rem;
+    width: 180px;
+    position: sticky;
+    top: 0;
+    /* Keeps the sidebar stuck at the top when scrolling */
+    /* height: 100vh; */
+    /* Full viewport height */
+    overflow-y: auto;
+    /* Adds a scrollbar if the sidebar content exceeds the viewport */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* Optional: Adds subtle shadow for better separation */
+    /* border-right: 1px solid #ddd; */
+    /* Optional: Adds a border to separate it from main content */
+    z-index: 100;
+    /* Ensures the sidebar is above other elements */
+}
+
+/* Section heading style */
+.sidebar h3 {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 1rem 0 0.5rem;
+    text-transform: uppercase;
+}
+
+/* List styling */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* List item styling */
+.sidebar ul li {
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    color: #333;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Hover effect for list items */
+.sidebar ul li:hover {
+    color: #f48024;
+}
+
+/* Active list item styling */
+.sidebar ul .active {
+    position: relative;
+    color: #f48024;
+    background-color: rgba(244, 128, 36, 0.1);
+    border-radius: 0 4px 4px 0;
+}
+
+/* Highlight bar for active list item */
+.sidebar ul .active::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 6px;
+    background-color: #f48024;
+    border-radius: 4px;
+}
+
+/* Styling for icons */
+.sidebar i {
+    color: #f48024;
+    margin-right: 0.5rem;
+}
+
+/* Icon hover effect */
+.sidebar ul li:hover i {
+    color: #f48024;
+}
+
+/* Optional: Section spacing */
+.sidebar-section {
+    margin-bottom: 1.5rem;
+}

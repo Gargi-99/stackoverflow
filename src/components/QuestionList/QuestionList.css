@@ -1,0 +1,140 @@
+.question-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    gap: 20px;
+    padding: 20px;
+    /* background-color: #F8F9F9; */
+    /* Light gray background */
+    border: none;
+}
+
+.fa-chevron-up {
+    color: #f48024;
+    font-size: 20px;
+}
+
+.question-card {
+    background-color: #FFFFFF;
+    /* White background for cards */
+    border: 1px solid #D6D8DA;
+    /* Subtle gray border */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.question-card:hover {
+    transform: translateY(-3px);
+    /* Slight hover effect */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.question-header {
+    margin-bottom: 10px;
+}
+
+.question-title {
+    color: #232629;
+    /* Orange for titles */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.question-title h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.question-title:hover {
+    text-decoration: underline;
+}
+
+.question-tags {
+    margin-top: 5px;
+}
+
+.tag {
+    margin-top: 15px;
+    display: inline-block;
+    color: #525960;
+    /* Text color */
+    border: 1px solid #b6d5e8;
+    /* Defines the border with color */
+    border-radius: 15px;
+    /* Rounded edges */
+    padding: 6px 12px;
+    /* Space inside the tag */
+    margin-right: 5px;
+    /* Space between tags */
+    font-size: 0.8rem;
+    /* Font size for tags */
+    font-weight: 500;
+    /* Font weight */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    /* background-color: #f9f9f9; */
+    /* Optional: Light background */
+}
+
+.tag:hover {
+    background-color: rgb(200, 197, 197);
+    /* Slightly darker background on hover */
+}
+
+
+.question-stats {
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: black;
+    /* Dark gray for stats text */
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-weight: 400;
+}
+
+
+
+/* Move 'question-asked' to the rightmost */
+.question-asked {
+    margin-left: auto;
+    /* Pushes the element to the right */
+    text-align: right;
+    /* Aligns the text to the right */
+    color: #666;
+    /* Optional: Style for consistency */
+    font-size: 0.6rem;
+    /* Optional: Adjust font size */
+    white-space: nowrap;
+    /* Prevents wrapping of content */
+}
+
+/* Optional link styling inside 'question-asked' */
+.question-asked .user-link {
+    color: #0095FF;
+    /* Matches Stack Overflow's orange color */
+    text-decoration: none;
+}
+
+.question-asked .user-link:hover {
+    text-decoration: underline;
+    /* Adds underline on hover */
+}
+
+.user-link {
+    color: #0095FF;
+    /* Vibrant blue for user links */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.user-link:hover {
+    text-decoration: underline;
+    color: #005A9E;
+    /* Slightly darker blue on hover */
+}

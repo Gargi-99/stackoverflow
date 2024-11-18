@@ -1,0 +1,93 @@
+/* Footer Styles */
+.footer {
+    background-color: black;
+    color: #ccc;
+    padding: 20px 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.footer-column:first-child {
+    flex: 0 0 100px;
+    /* Fixed width for the image column */
+}
+
+.footer-column h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footer-column li:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom .social-links {
+    margin-bottom: 10px;
+}
+
+.footer-bottom .social-links span {
+    margin-right: 15px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.footer-bottom .social-links span:hover {
+    color: #fff;
+}
+
+.footer-bottom a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.namelink {
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.name {
+    color: palevioletred !important;
+}
+
+.image {
+    height: 35px;
+    width: 35px;
+    margin-top: 0px !important;
+    margin-left: 150px !important;
+    align-items: center !important;
+}
